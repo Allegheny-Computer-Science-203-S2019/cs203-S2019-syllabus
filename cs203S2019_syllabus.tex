@@ -1,0 +1,423 @@
+\documentclass[11pt]{article}
+
+% Edit this customize for an instructor
+
+\newcommand{\instructorpronoun}[1]{his}
+
+% Use this when displaying a new command
+
+\newcommand{\command}[1]{``\lstinline{#1}''}
+\newcommand{\program}[1]{\lstinline{#1}}
+\newcommand{\url}[1]{\lstinline{#1}}
+\newcommand{\channel}[1]{\lstinline{#1}}
+\newcommand{\option}[1]{``{#1}''}
+\newcommand{\step}[1]{``{#1}''}
+
+\usepackage{pifont}
+\newcommand{\checkmark}{\ding{51}}
+\newcommand{\naughtmark}{\ding{55}}
+
+\usepackage{listings}
+\lstset{
+  basicstyle=\small\ttfamily,
+  columns=flexible,
+  breaklines=true
+}
+
+% Define the headers and footers
+
+\usepackage{fancyhdr}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+
+\fancyhf{}
+\rhead{Computer Science 100}
+\lhead{Syllabus}
+\rfoot{Page \thepage}
+\lfoot{Fall 2018}
+
+% Use elastic spacing around the headers
+
+\usepackage{titlesec}
+\titlespacing\section{0pt}{6pt plus 4pt minus 2pt}{4pt plus 2pt minus 2pt}
+
+\newcommand{\syllabustitle}[1]
+{
+  \begin{center}
+    \begin{center}
+      \bf
+      CMPSC 100\\Computational Expression\\
+      Fall 2018\\
+      \medskip
+    \end{center}
+    \bf
+    #1
+  \end{center}
+}
+
+\begin{document}
+
+\thispagestyle{empty}
+
+\syllabustitle{Syllabus}
+
+\vspace*{-.1in}
+\subsection*{Course Instructor}
+Dr.\ Gregory M.\ Kapfhammer\\
+\noindent Office Location: Alden Hall 108 \\
+\noindent Office Phone: +1 814--332--2880 \\
+\noindent Email: \url{gkapfham@allegheny.edu} \\
+\noindent Twitter: \url{@GregKapfhammer} \\
+\noindent Web Site: \url{https://www.gregorykapfhammer.com/}
+
+\subsection*{Instructor's Office Hours}
+
+\vspace*{-.05in}
+
+\begin{itemize}
+  \itemsep0em
+
+  \item Monday: 10:00 am--11:00 am and 2:30 pm--3:30 pm (15 minute time slots)
+
+  \item Tuesday: 4:30 pm--5:00 pm (15 minute time slots)
+
+  \item Wednesday: 10:00 am--11:00 am and 2:30 pm--3:30 pm (15 minute time slots)
+
+  \item Thursday: 11:00 am--12:00 noon and 4:30 pm--5:00 pm (15 minute time slots)
+
+  \item Friday: 10:00 am--11:00 am (15 minute time slots)
+
+\end{itemize}
+
+\noindent To schedule a meeting with me during my office hours, please visit my
+web site and click the ``Schedule'' link in the top left-hand corner. Now, you
+can browse my office hours or schedule an appointment by clicking the correct
+link and then reserving an open time slot. Students are also encouraged to post
+appropriate questions to a channel in Slack, which is available at
+\url{https://CMPSC100Fall2018.slack.com/}, and monitored by the instructor and
+the teaching assistants.
+
+\subsection*{Course Meeting Schedule}
+
+Lecture, Discussion, and Group Work Session: Monday and Wednesday 1:30 pm--2:20 pm \\
+Practical Session: Friday 1:30 pm--2:20 pm \\
+Laboratory Session: Tuesday 2:30 pm--4:20 pm \\
+Final Examination: Friday, December 14, 2018 at 7:00 pm
+
+\subsection*{Course Description}
+
+\begin{quote}
+
+An introduction to the principles of computer science with an emphasis on
+creative expression through the medium of a programming language. Participating
+in hands-on activities that often require teamwork, students learn the
+computational structures needed to solve problems and produce artifacts such as
+interactive games and computer-mediated art and music. Students also learn how
+to organize and document a program's source code so that it effectively
+communicates with the intended users and maintainers. Additionally, the
+introduction includes an overview of the discipline of computer science and
+computational thinking. During a weekly laboratory session students use
+state-of-the-art technology to complete projects, reporting on their results
+through both written documents and oral presentations.
+Prerequisite: Knowledge of elementary algebra.
+Distribution Requirements: ME, SP.\@ \\
+
+\end{quote}
+
+\subsection*{Course Objectives}
+
+The process of implementing and evaluating correct and efficient software
+involves the application of many interesting theories, techniques, and tools. In
+addition to learning problem solving and computational thinking skills, this
+class will teach students how to use, design, implement, and test algorithms in
+the object-oriented programming language called Java. Students will also learn
+about fundamental concepts such as data types, conditional logic, and iteration
+while also discovering how to use single-dimension, multi-dimensional, and
+extendable arrays and to implement graphical applications. Students will also
+gain hands-on experience in the use, design, implementation, and testing of
+software during the laboratory and practical sessions and a final project. Along
+with learning more about how to effectively work in a team of diverse software
+developers, students will enhance their ability to write and present ideas about
+software in a clear, concise, and compelling fashion. Students will also develop
+an understanding of the fascinating connections between computer science and
+other disciplines in the social and natural sciences and the humanities.
+
+\subsection*{Performance Objectives}
+
+At the completion of this semester, students should have a strong grasp of the
+basics of the object-oriented programming paradigm and an ever-deepening
+knowledge of topics like conditional logic, iteration, recursion, exceptions,
+and graphics programming. Also, students should be able to handle many of the
+important, yet accidental, aspects of implementing programs in the Java
+language. For instance, students should be comfortable with the use of Vim (and
+other text editors such as Atom) and understand how to use software tools such a
+GitHub, Gradle, and GatorGrader. Students should have a toolkit of programming
+language constructs that they can use to respond to the challenges that they
+encounter during the development and evaluation of software. Finally, students
+should demonstrate the ability to use both in-person discussions and
+cutting-edge software tools to effectively communicate and collaborate with a
+group of diverse team members.
+
+\vspace*{-.05in}
+
+\subsection*{Required Textbook}
+
+\noindent{\em Java Software Solutions: Foundations of Program Design}. John
+Lewis and William Loftus, Ninth Edition, ISBN:\ 0134462025, ISBN--13:\
+978-0134462028, 800 pages, 2017. \\ (References to the textbook are abbreviated
+as ``JSS'' on the course web site and the syllabus).
+
+\vspace*{.1in}
+
+\noindent Students who want more information about Java or project ideas may
+consult this free book:
+
+\noindent{\em Think Java: How to Think Like a Computer Scientist}. Allen Downey
+and Chris Mayfield. First Edition, ISBN--10: 1491929561, ISBN--13:
+978-1491929568, 252 pages, 2016.
+
+\vspace*{.1in}
+
+\noindent Students who want to improve their technical writing skills may
+consult this suggested book:
+
+\noindent{\em Writing for Computer Science}. Justin Zobel. Second Edition,
+ISBN--10: 1852338024, ISBN--13: 978--1852338022, 270 pages, 2004.
+
+\vspace*{.1in}
+
+\noindent Along with reading the required textbook, you may be invited to study
+additional articles from a wide variety of conference proceedings, scientific
+journals, and the popular press.
+
+\vspace*{-.05in}
+
+\subsection*{Course Policies}
+
+\subsubsection*{Grading}
+
+The grade that a student receives in this class will be based on the following categories. All of these percentages are
+approximate and, if the need to do so presents itself, it is possible for the course instructor to change the assigned
+percentages during the academic semester.
+
+\begin{center}
+  \begin{tabular}{c c}
+  \begin{tabular}{ll}
+    Class Participation        & 5\%  \\
+    SEED Project Participation & 5\%  \\
+    Midterm Examination        & 15\% \\
+    Final Examination          & 15\% \\
+  \end{tabular} &
+  \begin{tabular}{ll}
+    Mastery Quizzes            & 10\% \\
+    Laboratory Assignments     & 30\% \\
+    Practical Assignments      & 10\% \\
+    Final Project              & 10\%
+  \end{tabular}
+  \end{tabular}
+\end{center}
+
+\vspace*{-.05in}
+
+\noindent
+These grading categories have the following definitions:
+
+\vspace*{-.05in}
+
+\begin{itemize}
+
+  \item {\em Class Participation\/}: All students are required to actively
+    participate during all of the course sessions. Your participation will take
+    forms such as answering questions about the reading assignments, asking
+    constructive questions of group members, giving presentations, and leading a
+    discussion. You also must regularly participate in the discussions in the
+    course's Slack workspace. A student may request feedback on and will receive a
+    final grade for this category.
+
+  \item {\em SEED Project Participation\/}: As part of an ongoing project that
+    publishes educational discussions with software engineers, I will regularly
+    publish, on my blog available at
+    \url{https://www.gregorykapfhammer.com/blog/}, an interview with a software
+    developer in industry. At the start of an in-class practical session on a
+    Friday, every student should read the blog post and tweet a response to
+    that week's interview. Along with linking to the web site of the blog post
+    and mentioning \url{@GregKapfhammer}, your tweet should share what you
+    learned from the interviewee. Interested students should also connect with
+    the interviewee through LinkedIn.
+
+  \item {\em Mastery Quizzes\/}: The two quizzes will cover all of the material
+    in their associated module(s), as outlined on the review sheet. While the
+    second quiz is not cumulative, it will assume a basic understanding of the
+    material that was the focus of the first quiz. The date for each of the
+    quizzes will be announced at least one week in advance of the scheduled
+    date. Unless prior arrangements are made with the instructor, all students
+    will be expected to take these two quizzes on their scheduled date and to
+    complete the quizzes in the stated period of time.
+
+  \item {\em Midterm Examination\/}: The midterm is an hour-long cumulative test
+    covering all of the material from the class, practical, and laboratory
+    sessions, as outlined on the review sheet. Unless prior arrangements are
+    made with the course instructor, all students will be expected to take this
+    test on the scheduled date and complete the test in the stated period of
+    time.
+
+  \item {\em Final Examination\/}: The final examination is a three-hour
+    cumulative test, as outlined on the review sheet. Unless there are
+    documented severe and extenuating circumstances, students must take this
+    examination at the date and time stated on the first page of the syllabus.
+
+  \item {\em Laboratory Assignments\/}: These assignments invite students to
+    explore different techniques for designing, implementing, evaluating, and
+    documenting software solutions to challenging problems that often have a
+    connection to real-world concerns. Some of the assignments will require
+    students to conduct experiments and collect, analyze, and write about data
+    sets. To best ensure that students are ready to develop software in both
+    other classes at Allegheny and after graduation, students will complete
+    assignments both on an individual basis and in teams. When teamwork is
+    required, the instructor will often assign individuals to teams.
+
+  \item {\em Practical Assignments\/}: Graded on a credit/no-credit basis, these
+    assignments allow students to practice the technical skills that they
+    learned in previous class and laboratory sessions.
+
+  \item {\em Final Project\/}: This project will furnish you with the
+    description of a challenging problem and ask you to design, implement,
+    describe, and orally present a correct and carefully evaluated solution.
+    Completion of the final project will require you to apply all of the
+    knowledge and skills that you have acquired during the semester to solve a
+    technical problem and, whenever possible, make your solution and results
+    publicly available in a free and open fashion.
+
+\end{itemize}
+
+\subsubsection*{Assignment Submission and Evaluation}
+
+All assignments will have a stated due date. Electronic versions of the
+laboratory, practical, and final project assignments must be submitted to a
+student's GitHub repository; students will learn how to use version control with
+GitHub during the first laboratory and practical sessions. No credit will be
+awarded for any course work that is not submitted to your GitHub repository with
+the required name. Unless specified otherwise, all laboratory assignments must
+be turned in at the beginning of the session that is one week after the day the
+assignment was released. Practical assignments will be due at the start of the
+next class session unless otherwise stated. Without making special arrangements
+with the course instructor, no work will be accepted after the published
+deadline. Using a report that the instructor shares with you through the commit
+log in GitHub, you will privately received a grade for and feedback on each
+assignment. Your grade will be a function of whether or you not completed
+correct work and submitted it by the deadline. Other factors (e.g., the quality
+of your source code and technical writing) will also influence your assignment
+grade.
+
+\vspace*{-.1in}
+
+\subsubsection*{Course Attendance}
+
+It is mandatory for all students to attend all of the class, practical, and
+laboratory sessions. If, due to extenuating circumstances, you will not be able
+to attend a session, then, whenever possible, please see the course instructor
+at least one week in advance to describe your situation. Students who miss more
+than five unexcused sessions will have their final grade in the course reduced
+by one letter grade. Students who miss more than ten of the aforementioned
+events will fail the course.
+
+\vspace*{-.05in}
+
+\subsubsection*{Use of Laboratory Facilities}
+
+Throughout the semester, we will employ many different software tools that
+computer scientists use during the design, implementation, and evaluation of
+computer software. Since it is unlikely that a student's unmodified computer
+will have the software tools that correctly support the completion of the
+laboratory assignments, unless there are documented extenuating circumstances,
+students are advised to complete all of their work for this course while using
+the laboratory facilities.
+
+\vspace*{-.1in}
+
+\subsubsection*{Class Preparation}
+
+In order to minimize confusion and maximize learning, students must invest time
+to prepare for the class discussions, lectures, and practical sessions. During
+the class periods, the course instructor will often pose challenging questions
+that could require group discussion, the creation of a program or data set, a
+vote on a thought-provoking issue, or a group presentation. Only students who
+have prepared for class by reading the assigned material and reviewing the
+current laboratory and practical assignments will be able to effectively
+participate in these discussions.
+
+More importantly, only prepared students will be able to acquire the knowledge
+and skills that they need to be successful in this course, subsequent courses,
+and the field of computer science. In order to help students remain organized
+and to effectively prepare for classes, the course instructor will maintain a
+class schedule with reading assignments and presentation slides. During the
+class sessions students will also be required to download, use, and modify
+programs and data sets that are made available through means such as the course
+web site and a GitHub repository.
+
+\subsubsection*{Seeking Assistance}
+
+Students who are struggling to understand the knowledge and skills developed in
+a class, laboratory, or practical session are encouraged to seek assistance from
+the course instructor, the teaching assistants, or the departmental tutors.
+Throughout the semester, students should, within the bounds of the Honor Code,
+ask and answer questions on the Slack workspace for our course; please request
+assistance from the instructor, teaching assistants, and tutors first through
+Slack before sending an email. Students who need the course instructor's
+assistance must schedule a meeting through \instructorpronoun{} web site and
+come to the meeting with all of the details needed to discuss their question.
+
+\subsubsection*{Using Email}
+
+Although we will primarily use Slack for class communication, I will sometimes
+use email to send announcements about important matters such as changes in the
+schedule. It is your responsibility to check your email at least once a day and
+to ensure that you can reliably send and receive emails. This class policy is
+based on the statement about the use of email that appears in {\em The Compass},
+the College's student handbook; please see the instructor if you do not have
+this handbook.
+
+\subsubsection*{Honor Code}
+
+The Academic Honor Program that governs the entire academic program at Allegheny College is described in the Allegheny
+Academic Bulletin. The Honor Program applies to all work that is submitted for academic credit or to meet non-credit
+requirements for graduation at Allegheny College. This includes all work assigned for this class (e.g., examinations,
+laboratory assignments, and the final project). All students who have enrolled in the College will work under the Honor
+Program. Each student who has matriculated at the College has acknowledged the following pledge:
+
+\vspace*{-.11in}
+\begin{quote}
+  I hereby recognize and pledge to fulfill my responsibilities, as defined in the Honor Code, and to maintain the
+  integrity of both myself and the College community as a whole.
+\end{quote}
+\vspace*{-.11in}
+
+\noindent It is understood that an important part of the learning process in any course, and particularly one in
+computer science, derives from thoughtful discussions with teachers and fellow students. Such dialogue is encouraged.
+However, it is necessary to distinguish carefully between the student who discusses the principles underlying a problem
+with others and the student who produces assignments that are identical to, or merely variations on, someone else's
+work. While it is acceptable for students in this class to discuss their programs, data sets, and reports with their
+classmates, deliverables that are nearly identical to the work of others will be taken as evidence of violating the
+\mbox{Honor Code}.
+
+\subsubsection*{Disability Services}
+
+The Americans with Disabilities Act (ADA) is a federal anti-discrimination statute that provides comprehensive civil
+rights protection for persons with disabilities. Among other things, this legislation requires all students with
+disabilities be guaranteed a learning environment that provides for reasonable accommodation of their disabilities.
+Students with disabilities who believe they may need accommodations in this class are encouraged to contact Disability
+Services at 332--2898. Disability Services is part of the Learning Commons and is located in Pelletier Library.
+Please do this as soon as possible to ensure that approved accommodations are implemented in a timely fashion.
+
+\subsection*{Welcome to an Adventure in Computer Science}
+
+In reference to software, Frederick P.\ Brooks, Jr.\ wrote in chapter one of {\em The Mythical Man Month}, ``The magic
+of myth and legend has come true in our time.'' Software is a pervasive aspect of our society that changes how we think
+and act. Efficient and correct software also has the potential to positively influence the lives of many people.
+Moreover, the design, implementation, evaluation, and documentation of software are exciting and rewarding activities!
+At the start of this class, I invite you to pursue, with great enthusiasm and vigor, this adventure in computer science.
+
+\end{document}
