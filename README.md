@@ -1,6 +1,6 @@
 # cs203-S2019-syllabus
 
-This repository contains the syllabus for Computer Science 111 Fall 2017. To
+This repository contains the syllabus for Computer Science 203 Fall 2019. To
 learn more about the course for which this syllabus was created, please visit
 the [Computer Science 203 Spring 2019 GitHub
 Organization](https://github.com/Allegheny-Computer-Science-203-S2019). All of
